@@ -5,6 +5,33 @@
   width: 50%;
 }
 
+#warning {
+  color: rgb(37, 241, 6);
+  font-size: 50;
+}
+
+#container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+table {
+  border: 1px solid black;
+}
+
+h3 {
+  color: purple;
+  font-size: 20;
+}
+
+.instructions {
+  text-align: center;
+  font-size: 30px;
+  color: red;
+}
+
 body {
   background-color: tan;
 }
@@ -16,52 +43,125 @@ body {
 
 #butter {
   color: green;
+  /*
   position: relative;
-  top: -500px;
-  right: -125px;
+  top: -510px;
+  right: -220px;
+  */
   font-size: 25px;
 }
 
 #brown {
   position: relative;
   color: royalblue;
-  top: -400px;
-  right: -40px;
+  /*
+  top: -450px;
+  right: -60px;
+  */
   font-size: 25px;
 }
 
 #sugar {
   position: relative;
   color: red;
+  /*
   top: -320px;
   right: -120px;
+  */
   font-size: 25px;
 }
 
 #egg {
   position: relative;
   color: yellow;
+  /*
   top: -290px;
   right: -200px;
+  */
   font-size: 25px;
 }
 
 #vanilla {
   position: relative;
   color: red;
+  /*
   top: -250px;
   right: -230px;
+  */
   font-size: 25px;
 }
 
-.soda {
+#soda {
+  position: relative;
+  color: green;
+  /*
+  top: -775px;
+  right: -700px;
+  */
+  font-size: 25px;
 }
 
-.salt {
+#salt {
+  position: relative;
+  color: royalblue;
+  /*
+  top: -680px;
+  right: -800px;
+  */
+  font-size: 25px;
 }
 
-.mms {
+#mms {
+  position: relative;
+  color: red;
+  /*
+  top: -575px;
+  right: -750px;
+  */
+  font-size: 25px;
 }
 
-.flour {
+#flour {
+  color: black;
+  /*
+  position: relative;
+  top: -500px;
+  right: -660px;
+  */
+  font-size: 25px;
+}
+
+#sources {
+  color: green;
+  font-size: 50px;
+  text-align: right;
+}
+
+/* all accordian stuff comes from https://www.w3schools.com/howto/howto_js_accordion.asp 
+ sorry running out of time */
+.accordion {
+  background-color: tan;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  float: right;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  background-color: tan;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: tan;
+  display: none;
+  overflow: hidden;
 }

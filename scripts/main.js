@@ -1,5 +1,6 @@
+let clickCount = 0;
+
 function cookie_click() {
-    // replace butter
     
     let butter = document.getElementById("butter");
     let egg = document.getElementById("egg");
@@ -11,7 +12,14 @@ function cookie_click() {
     let mms = document.getElementById("mms");
     let flour = document.getElementById("flour");
 
-console.log("hereeeeee")
+clickCount += 1;
+if (clickCount === 30){
+  let picture =  document.getElementById("cookie-pic");
+  picture.src = "./images/mm-gif.gif";
+  picture.innerHTML = `PLEASE DO NOT EAT MEEEEE!!!!!!`
+  console.log(picture)
+
+}
 
     if (butter.innerHTML === "1 cup butter") {
         // butter
@@ -53,8 +61,28 @@ let types = ["Chocolate-Chips", "Sugar", "Snickerdoodle", "Double-Chocolate", "P
 let cookieTable = document.getElementById("ctable")
 
 types.forEach(cookie => {
-    console.log("here")
     let row = document.createElement("tr")
     row.innerHTML = cookie;
     cookieTable.appendChild(row);
 })
+
+
+// more accordian stuff from h3
+var acc = document.getElementsByClassName("accordion");
+
+
+for (let i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
