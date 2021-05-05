@@ -1,0 +1,67 @@
+.cookie {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+body {
+  background-color: tan;
+}
+
+.title {
+  color: royalblue;
+  text-align: center;
+}
+
+#butter {
+  color: green;
+  position: relative;
+  top: -500px;
+  right: -125px;
+  font-size: 25px;
+}
+
+#brown {
+  position: relative;
+  color: royalblue;
+  top: -400px;
+  right: -40px;
+  font-size: 25px;
+}
+
+#sugar {
+  position: relative;
+  color: red;
+  top: -320px;
+  right: -120px;
+  font-size: 25px;
+}
+
+#egg {
+  position: relative;
+  color: yellow;
+  top: -290px;
+  right: -200px;
+  font-size: 25px;
+}
+
+#vanilla {
+  position: relative;
+  color: red;
+  top: -250px;
+  right: -230px;
+  font-size: 25px;
+}
+
+.soda {
+}
+
+.salt {
+}
+
+.mms {
+}
+
+.flour {
+}
